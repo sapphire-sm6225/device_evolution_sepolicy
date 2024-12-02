@@ -15,6 +15,9 @@ vendor.camera.aux.packageexcludelist   u:object_r:camera2_extensions_prop:s0
 vendor.camera.aux.packagelist          u:object_r:camera2_extensions_prop:s0
 vendor.camera.skip_unconfigure.packagelist  u:object_r:camera2_extensions_prop:s0
 
+# Columbus ApSensor
+persist.columbus.use_ap_sensor         u:object_r:system_prop:s0
+
 # Custom legal URL
 ro.lineagelegal.url                    u:object_r:legal_url_prop:s0
 
