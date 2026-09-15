@@ -65,6 +65,7 @@ persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
 
 # SurfaceFlinger
 ro.surface_flinger.blur_disabled_by_default u:object_r:surfaceflinger_prop:s0 exact bool
+ro.surface_flinger.use_legacy_vds_refresh_pacing u:object_r:surfaceflinger_prop:s0 exact bool
 
 # xtra-daemon control
 persist.sys.xtra-daemon.enabled        u:object_r:xtra_control_prop:s0 exact bool
