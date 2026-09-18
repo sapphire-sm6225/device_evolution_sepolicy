@@ -76,3 +76,6 @@ persist.sysui.disable_mirroring_confirmation_dialog u:object_r:hdmi_config_prop:
 # USB
 ro.usb.uvc.disable_video_encode_flag   u:object_r:usb_uvc_config_prop:s0
 vendor.usb.uvc.payload_transfer_size   u:object_r:usb_uvc_config_prop:s0
+
+# Legacy public build fingerprint queried by qtidataservices and device apps.
+ro.product.fingerprint u:object_r:build_prop:s0 exact string
