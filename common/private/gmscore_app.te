@@ -1,3 +1,6 @@
 allow gmscore_app system_data_file:file r_file_perms;
 
 set_prop(gmscore_app, system_prop)
+
+# DroidGuard reads the staged Play Integrity props through bionic
+get_prop(gmscore_app, pif_prop)

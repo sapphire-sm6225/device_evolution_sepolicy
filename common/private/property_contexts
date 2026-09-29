@@ -79,3 +79,6 @@ vendor.usb.uvc.payload_transfer_size   u:object_r:usb_uvc_config_prop:s0
 
 # Legacy public build fingerprint queried by qtidataservices and device apps.
 ro.product.fingerprint u:object_r:build_prop:s0 exact string
+
+# Play Integrity staging props read by bionic in DroidGuard
+persist.sys.pif.                       u:object_r:pif_prop:s0
