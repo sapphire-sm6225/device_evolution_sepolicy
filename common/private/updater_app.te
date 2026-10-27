@@ -9,6 +9,7 @@ binder_call(updater_app, update_engine)
 allow updater_app app_api_service:service_manager find;
 allow updater_app recovery_service:service_manager find;
 allow updater_app system_api_service:service_manager find;
+allow updater_app system_update_service:service_manager find;
 allow updater_app update_engine_service:service_manager find;
 
 allow updater_app app_data_file:dir create_dir_perms;
