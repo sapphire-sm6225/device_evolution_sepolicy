@@ -55,5 +55,8 @@ add_service(system_server, game_space_service);
 allow system_server ax_sandbox_vault_file:dir create_dir_perms;
 allow system_server ax_sandbox_vault_file:file create_file_perms;
 
+# Let system server set vbmeta prop
+set_prop(system_server, bootloader_prop)
+
 # Stage the Play Integrity props that bionic serves to DroidGuard
 set_prop(system_server, pif_prop)
