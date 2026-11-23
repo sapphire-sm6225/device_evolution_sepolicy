@@ -30,4 +30,7 @@ allowxperm recovery block_device:blk_file ioctl { HDIO_GETGEO BLKGETSIZE };
 
 # Read fbe encryption info
 r_dir_file(recovery, unencrypted_data_file)
+
+# fs_mgr reads /sys/fs/f2fs/features/linear_lookup before running fsck.f2fs
+r_dir_file(recovery, sysfs_fs_f2fs)
 ')
